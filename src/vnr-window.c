@@ -1466,6 +1466,11 @@ vnr_set_wallpaper(GtkAction *action, VnrWindow *win)
                         "picture-uri", tmp,
                         NULL);
                 break;
+            case VNR_PREFS_DESKTOP_I3:
+                execlp("set-pape.sh", "set-pape.sh",
+                        VNR_FILE(win->file_list->data)->path,
+                        NULL);
+                break;
             default:
                 _exit(0);
         }

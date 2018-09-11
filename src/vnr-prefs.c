@@ -283,6 +283,7 @@ build_dialog (VnrPrefs *prefs)
     gtk_combo_box_append_text(desktop_env, "Nitrogen");
     gtk_combo_box_append_text(desktop_env, "MATE");
     gtk_combo_box_append_text(desktop_env, "Cinnamon");
+    gtk_combo_box_append_text(desktop_env, "I3");
     gtk_combo_box_append_text(desktop_env, _("Autodetect"));
     gtk_combo_box_set_active(desktop_env, prefs->desktop);
 
